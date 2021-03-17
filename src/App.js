@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Navbar from "./Component/Navbar/Navbar";
 import Home from "./Component/Home/Home";
+import About from "./Component/About/About";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Switch>
      
       <Route exact path="/" component={Home}/>
+      <Route exact path="/about" component={About}/>
        
      </Switch>
 

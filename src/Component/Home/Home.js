@@ -48,7 +48,8 @@ export default function Home() {
                       </li>
                       <li>
                         <a href="mailto:utkarshgubrelay2000@gmail.com">
-                          <i class="lnr lnr-envelope"></i> utkarshgubrelay2000@gmail.com
+                          <i class="lnr lnr-envelope"></i>{" "}
+                          utkarshgubrelay2000@gmail.com
                         </a>
                       </li>
                       <li>
@@ -75,6 +76,169 @@ export default function Home() {
                       </li>
                     </ul>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="welcome_area p_120">
+        <div class="container">
+          <div class="row welcome_inner">
+            <div class="col-lg-6">
+              <div class="welcome_text">
+                <h4>About Myself</h4>
+                <p>
+                  inappropriate behavior is often laughed off as “boys will be
+                  boys,” women face higher conduct standards especially in the
+                  workplace. That’s why it’s crucial that, as women, our
+                  behavior on the job is beyond reproach. inappropriate behavior
+                  is often laughed.
+                </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="wel_item">
+                      <h6>Working Experience</h6>
+
+                      <p>
+                        currently working in{" "}
+                        <a href="thebrandwick.com">BrandWick</a>
+                      </p>
+<br/>
+                      <p>
+                        intern at
+                        <a href="https://www.onit.digital/">
+                          {" "}
+                          {"     "} <br />
+                          Onit Digital Creative Studio
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="wel_item">
+                      <h5>Education</h5>
+
+                        <h6>
+                          Higher education 
+                          </h6>
+                      <p>
+                         pursing for Mtech 5years
+                      </p>
+                       <h6>
+                          Schooling (2019) 
+                         </h6>
+                      <p>
+                        12th -: 83%<br/>
+                        10th -: 9.0 CGPA
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="tools_expert">
+                <div class="skill_main">
+                  <div class="skill_item">
+                    <h4>
+                      React js <span class="counter">75</span>%
+                    </h4>
+                    <div class="progress_br">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                    
+                          aria-valuenow="85"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill_item">
+                    <h4>
+                      Nodejs <span class="counter">80</span>%
+                    </h4>
+                    <div class="progress_br">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="90"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill_item">
+                    <h4>
+                      Html, css, javaScript <span class="counter">80</span>%
+                    </h4>
+                    <div class="progress_br">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill_item">
+                    <h4>
+                      React Native <span class="counter">65</span>%
+                    </h4>
+                    <div class="progress_br">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="95"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill_item">
+                    <h4>
+                      git & github <span class="counter">75</span>%
+                    </h4>
+                    <div class="progress_br">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill_item">
+                    <h4>
+                      Wordpress  <span class="counter">65</span>%
+                    </h4>
+                    <div class="progress_br">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+         
                 </div>
               </div>
             </div>
