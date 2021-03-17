@@ -23,6 +23,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
     "react-slick": "^0.28.0",
+    "react-typing-effect": "^2.0.5",
     "recoil": "^0.1.2",
     "recoil-persist": "^2.3.0",
     "slick-carousel": "^1.8.1",
