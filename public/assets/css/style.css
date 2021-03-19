@@ -233,7 +233,7 @@ button:focus {
     top: -70px;
     left: 0;
     right: 0;
-    background: #000;
+   
     transform: translateY(70px);
     transition: transform 500ms ease, background 500ms ease;
     -webkit-transition: transform 500ms ease, background 500ms ease;

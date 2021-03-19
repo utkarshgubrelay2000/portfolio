@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ReactTypingEffect from "react-typing-effect";
 import FormatColorFillIcon from '@material-ui/icons/FormatColorFillTwoTone';
 import DeveloperModeOutlinedIcon from '@material-ui/icons/DeveloperModeOutlined';
 import WebAssetTwoToneIcon from '@material-ui/icons/WebAssetTwoTone'
 import FormatQuoteTwoToneIcon from '@material-ui/icons/FormatQuoteTwoTone';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 export default function Home() {
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
   return (
-    <section>
+    <section >
       <section className="home_banner_area home_banner">
         <div className="container box_1620">
           <div className="banner_inner d-flex align-items-center">
@@ -224,7 +229,7 @@ export default function Home() {
               as $.17 each.
             </p>
           </div>
-          <div className="feature_inner row">
+          <div className="feature_inner row" data-aos='fade-left'>
             <div className="col-lg-4 col-md-6">
               <div className="feature_item">
               
@@ -280,7 +285,7 @@ export default function Home() {
           <div className="col-12">
             <div className="feature_item feature_quote">
               <FormatQuoteTwoToneIcon fontSize='large'/>
-              <h5 className="text-center">
+              <h5 className="text-center  feature_quoteh5" >
                 “A successful website does three things: It attracts the right
                 kinds of visitors. Guides them to the main services or product
                 you offer. Collect Contact details for future ongoing relation.”
@@ -292,6 +297,98 @@ export default function Home() {
           </div>
         </section>
       </section>
+      <section class="home_gallery_area p_120 animate">
+        	<div class="container"  >
+        		<div class="main_title">
+        			<h2>Recent Projects</h2>
+        			<p>Who are in extremely love with eco friendly system.</p>
+        		</div>
+        		
+        	</div>
+        	<div class="container"  data-aos='fade-up'>
+        		<div class="gallery_f_inner row imageGallery1">
+        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-1.jpg" alt=""/>
+        						<a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""/></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>3D Helmet Design</h4>
+        						<p>Client Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-2.jpg" alt=""/>
+        						<a class="light" href="img/gallery/project-2.jpg">
+                      <img src="img/gallery/icon.png" alt=""/></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>2D Vinyl Design</h4>
+        						<p>Client Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-3.jpg" alt=""/>
+        						<a class="light" href="img/gallery/project-3.jpg">
+                      <img src="img/gallery/icon.png" alt=""/></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Creative Poster Design</h4>
+        						<p>Client Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative print">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-4.jpg" alt=""/>
+        						<a class="light" href="img/gallery/project-4.jpg"><img src="img/gallery/icon.png" alt=""/></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Embosed Logo Design</h4>
+        						<p>Client Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-5.jpg" alt=""/>
+        						<a class="light" href="img/gallery/project-5.jpg"><img src="img/gallery/icon.png" alt=""/></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>3D Disposable Bottle</h4>
+        						<p>Client Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-6.jpg" alt=""/>
+        						<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""/></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>3D Logo Design</h4>
+        						<p>Client Project</p>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="more_btn">
+        			<a class="main_btn" href="#">Load More Items</a>
+        		</div>
+        	</div>
+        </section>
+   
+   
     </section>
   );
 }

@@ -244,6 +244,25 @@ code {
   background-color: white;
   color: black;
 }
+.feature_quoteh5 {
+  
+  color: #333333;
+}
+.feature_quoteh5:hover {
+  
+  color: #27678b;
+}
 .home_banner {
   background-image: -webkit-linear-gradient(0deg, #9c56f7 0%, #7510f7 100%);
+}
+.animate{
+  animation: fade-in 2s ease-in;
+}
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
