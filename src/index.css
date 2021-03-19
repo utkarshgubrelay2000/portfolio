@@ -1,19 +1,18 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-
-.card-img-top{
+.card-img-top {
   height: 20vh;
   border-radius: 50%;
   max-width: 45%;
@@ -21,4 +20,70 @@ code {
   margin-right: auto;
   margin-top: 10px;
   object-fit: cover;
+}
+.pB,
+.pB1,
+.pB2,
+.pB3,
+.pB4
+,.pB5 {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  transition: ease-in 1s;
+}
+.pB2:after {
+  content: "\A";
+  position: absolute;
+  background: linear-gradient(90deg, #0061ff, #60efff);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 80%; /* Specify the width.. */
+}
+.pB:after {
+  content: "\A";
+  position: absolute;
+  background: linear-gradient(90deg, #0061ff, #60efff);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 75%; /* Specify the width.. */
+}
+.pB3:after {
+  content: "\A";
+  position: absolute;
+  background: linear-gradient(90deg, #0061ff, #60efff);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 65%; /* Specify the width.. */
+}
+.pB1:after {
+  content: "\A";
+  position: absolute;
+  background: linear-gradient(90deg, #0061ff, #60efff);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 80%; /* Specify the width.. */
+}
+
+.pB4:after {
+  content: "\A";
+  position: absolute;
+  background: linear-gradient(90deg, #0061ff, #60efff);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 75%; /* Specify the width.. */
+}
+.pB5:after {
+  content: "\A";
+  position: absolute;
+  background: linear-gradient(90deg, #0061ff, #60efff);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 65%; /* Specify the width.. */
 }

@@ -8,12 +8,16 @@ export default function Home() {
         <div class="container box_1620">
           <div class="banner_inner d-flex align-items-center">
             <div class="banner_content">
-              <div class="media">
-                <div class="d-flex">
-                  <img src="img/personal.jpg" alt="" />
+              <div class="media row ">
+                <div class="d-flex col-md-1">
+                  <img
+                    className="homePageImage"
+                    src="https://res.cloudinary.com/dvu7miswu/image/upload/v1616061752/a2z5guhisnfrxvydcca3.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="media-body">
-                  <div class="personal_text">
+                <div class="media-body col-md-12">
+                  <div class="personal_text" style={{ color: "black" }}>
                     <h6>Hello Everybody, i am</h6>
                     <h3>Donald McKinney</h3>
                     <h5>
@@ -105,7 +109,7 @@ export default function Home() {
                         currently working in{" "}
                         <a href="thebrandwick.com">BrandWick</a>
                       </p>
-<br/>
+                      <br />
                       <p>
                         intern at
                         <a href="https://www.onit.digital/">
@@ -120,17 +124,12 @@ export default function Home() {
                     <div class="wel_item">
                       <h5>Education</h5>
 
-                        <h6>
-                          Higher education 
-                          </h6>
+                      <h6>Higher education</h6>
+                      <p>pursing for Mtech 5years</p>
+                      <h6>Schooling (2019)</h6>
                       <p>
-                         pursing for Mtech 5years
-                      </p>
-                       <h6>
-                          Schooling (2019) 
-                         </h6>
-                      <p>
-                        12th -: 83%<br/>
+                        12th -: 83%
+                        <br />
                         10th -: 9.0 CGPA
                       </p>
                     </div>
@@ -147,14 +146,7 @@ export default function Home() {
                     </h4>
                     <div class="progress_br">
                       <div class="progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                    
-                          aria-valuenow="85"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
+                        <div className="pB"></div>
                       </div>
                     </div>
                   </div>
@@ -164,13 +156,7 @@ export default function Home() {
                     </h4>
                     <div class="progress_br">
                       <div class="progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="90"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
+                        <div className="pB1"></div>
                       </div>
                     </div>
                   </div>
@@ -180,13 +166,7 @@ export default function Home() {
                     </h4>
                     <div class="progress_br">
                       <div class="progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="70"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
+                        <div className="pB2"></div>
                       </div>
                     </div>
                   </div>
@@ -196,13 +176,7 @@ export default function Home() {
                     </h4>
                     <div class="progress_br">
                       <div class="progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="95"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
+                        <div className="pB3"></div>
                       </div>
                     </div>
                   </div>
@@ -212,33 +186,20 @@ export default function Home() {
                     </h4>
                     <div class="progress_br">
                       <div class="progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="75"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
+                        <div class="pB4"></div>
                       </div>
                     </div>
                   </div>
                   <div class="skill_item">
                     <h4>
-                      Wordpress  <span class="counter">65</span>%
+                      Wordpress <span class="counter">65</span>%
                     </h4>
                     <div class="progress_br">
                       <div class="progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="75"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
+                        <div class="pB5"></div>
                       </div>
                     </div>
                   </div>
-         
                 </div>
               </div>
             </div>
