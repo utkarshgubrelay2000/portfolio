@@ -1,25 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ReactTypingEffect from "react-typing-effect";
+import FormatColorFillIcon from '@material-ui/icons/FormatColorFillTwoTone';
+import DeveloperModeOutlinedIcon from '@material-ui/icons/DeveloperModeOutlined';
+import WebAssetTwoToneIcon from '@material-ui/icons/WebAssetTwoTone'
+import FormatQuoteTwoToneIcon from '@material-ui/icons/FormatQuoteTwoTone';
 export default function Home() {
   return (
     <section>
-      <section class="home_banner_area">
-        <div class="container box_1620">
-          <div class="banner_inner d-flex align-items-center">
-            <div class="banner_content">
-              <div class="media row ">
-                <div class="d-flex col-md-1">
+      <section className="home_banner_area home_banner">
+        <div className="container box_1620">
+          <div className="banner_inner d-flex align-items-center">
+            <div className="banner_content">
+              <div className="media row ">
+                <div className="d-flex col-md-6 col-12">
                   <img
                     className="homePageImage"
                     src="https://res.cloudinary.com/dvu7miswu/image/upload/v1616061752/a2z5guhisnfrxvydcca3.jpg"
                     alt=""
                   />
                 </div>
-                <div class="media-body col-md-12">
-                  <div class="personal_text" style={{ color: "black" }}>
+                 <div className="media-body col-md-6 col-12">
+                  <div className="personal_text" style={{ color: "black" }}>
                     <h6>Hello Everybody, i am</h6>
-                    <h3>Donald McKinney</h3>
+                    <h3 className='animate__bounceInLeft'>Utkarsh Gubrelay</h3>
+                    <div class="animate__animated animate__bounce animate__repeat-2">Example</div>
                     <h5>
                       <ReactTypingEffect
                         text={[
@@ -38,61 +43,61 @@ export default function Home() {
                       Dickens Pattern (with reference to the ghost showing
                       Scrooge some different futures)
                     </p>
-                    <ul class="list basic_info">
+                    <ul className="list basic_info">
                       <li>
                         <Link to="#">
-                          <i class="lnr lnr-calendar-full"></i> 19 September,
+                          <i className="lnr lnr-calendar-full"></i> 19 September,
                           2000
                         </Link>
                       </li>
                       <li>
                         <a href="telto:7489279080">
-                          <i class="lnr lnr-phone-handset"></i> 7489279080
+                          <i className="lnr lnr-phone-handset"></i> 7489279080
                         </a>
                       </li>
                       <li>
                         <a href="mailto:utkarshgubrelay2000@gmail.com">
-                          <i class="lnr lnr-envelope"></i>{" "}
+                          <i className="lnr lnr-envelope"></i>{" "}
                           utkarshgubrelay2000@gmail.com
                         </a>
                       </li>
                       <li>
                         <Link to="#">
-                          <i class="lnr lnr-home"></i> Santa monica bullevard
+                          <i className="lnr lnr-home"></i> Santa monica bullevard
                         </Link>
                       </li>
                     </ul>
-                    <ul class="list personal_social">
+                    <ul className="list personal_social">
                       <li>
                         <Link to="#">
-                          <i class="fa fa-facebook"></i>
+                          <i className="fa fa-facebook"></i>
                         </Link>
                       </li>
                       <li>
                         <Link to="#">
-                          <i class="fa fa-twitter"></i>
+                          <i className="fa fa-twitter"></i>
                         </Link>
                       </li>
                       <li>
                         <Link to="#">
-                          <i class="fa fa-linkedin"></i>
+                          <i className="fa fa-linkedin"></i>
                         </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
-              </div>
+             </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="welcome_area p_120">
-        <div class="container">
-          <div class="row welcome_inner">
-            <div class="col-lg-6">
-              <div class="welcome_text">
-                <h4>About Myself</h4>
+      <section className="welcome_area p_120">
+        <div className="container">
+          <div className="row welcome_inner">
+            <div className="col-lg-6">
+              <div className="welcome_text">
+                <h4 className='primary-color'>About Myself</h4>
                 <p>
                   inappropriate behavior is often laughed off as “boys will be
                   boys,” women face higher conduct standards especially in the
@@ -100,9 +105,9 @@ export default function Home() {
                   behavior on the job is beyond reproach. inappropriate behavior
                   is often laughed.
                 </p>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="wel_item">
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="wel_item">
                       <h6>Working Experience</h6>
 
                       <p>
@@ -120,12 +125,13 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="wel_item">
+                  <div className="col-md-6">
+                    <div className="wel_item">
                       <h5>Education</h5>
 
                       <h6>Higher education</h6>
                       <p>pursing for Mtech 5years</p>
+                      <br/>
                       <h6>Schooling (2019)</h6>
                       <p>
                         12th -: 83%
@@ -137,66 +143,67 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="tools_expert">
-                <div class="skill_main">
-                  <div class="skill_item">
+            <div className="col-lg-6">
+              <div className="tools_expert">
+                <div className="skill_main">
+                  <div className="skill_item">
                     <h4>
-                      React js <span class="counter">75</span>%
+                      React js <span className="counter">75</span>%
                     </h4>
-                    <div class="progress_br">
-                      <div class="progress">
+                    <div className="progress_br">
+                      <div className="progress">
                         <div className="pB"></div>
                       </div>
                     </div>
                   </div>
-                  <div class="skill_item">
+                  <div className="skill_item">
                     <h4>
-                      Nodejs <span class="counter">80</span>%
+                      Nodejs <span className="counter">80</span>%
                     </h4>
-                    <div class="progress_br">
-                      <div class="progress">
+                    <div className="progress_br">
+                      <div className="progress">
                         <div className="pB1"></div>
                       </div>
                     </div>
                   </div>
-                  <div class="skill_item">
+                  <div className="skill_item">
                     <h4>
-                      Html, css, javaScript <span class="counter">80</span>%
+                      Html, css, javaScript <span className="counter">80</span>%
                     </h4>
-                    <div class="progress_br">
-                      <div class="progress">
+                    
+                    <div className="progress_br">
+                      <div className="progress">
                         <div className="pB2"></div>
                       </div>
                     </div>
                   </div>
-                  <div class="skill_item">
+                  <div className="skill_item">
                     <h4>
-                      React Native <span class="counter">65</span>%
+                      React Native <span className="counter">65</span>%
                     </h4>
-                    <div class="progress_br">
-                      <div class="progress">
+                    <div className="progress_br">
+                      <div className="progress">
                         <div className="pB3"></div>
                       </div>
                     </div>
                   </div>
-                  <div class="skill_item">
+                  <div className="skill_item">
                     <h4>
-                      git & github <span class="counter">75</span>%
+                      git & github <span className="counter">75</span>%
                     </h4>
-                    <div class="progress_br">
-                      <div class="progress">
-                        <div class="pB4"></div>
+                    <div className="progress_br">
+                      <div className="progress">
+                        <div className="pB4"></div>
                       </div>
                     </div>
                   </div>
-                  <div class="skill_item">
+                  <div className="skill_item">
                     <h4>
-                      Wordpress <span class="counter">65</span>%
+                      Wordpress <span className="counter">65</span>%
                     </h4>
-                    <div class="progress_br">
-                      <div class="progress">
-                        <div class="pB5"></div>
+                    <div className="progress_br">
+                      <div className="progress">
+                        <div className="pB5"></div>
                       </div>
                     </div>
                   </div>
@@ -205,6 +212,85 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="feature_area p_120">
+        <div className="container">
+          <div className="main_title">
+            <h2>offerings to my clients</h2>
+            <p>
+              If you are looking at blank cassettes on the web, you may be very
+              confused at the difference in price. You may see some for as low
+              as $.17 each.
+            </p>
+          </div>
+          <div className="feature_inner row">
+            <div className="col-lg-4 col-md-6">
+              <div className="feature_item">
+              
+
+                <h4><FormatColorFillIcon /> { " "}Designer</h4>
+                <p className="text-left">
+                  I value simple content structure, clean design patterns, and
+                  thoughtful interactions.
+                </p>
+                <br />
+                <h4>Services</h4>
+                <p className="text-left">UX , UI , Web , Apps , Logos</p>
+                <br/>
+              
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="feature_item">
+              
+                <h4><WebAssetTwoToneIcon /> { " "}Front-end Development</h4>
+           
+                <p className="text-left">
+                  I like to code things from scratch, and enjoy bringing ideas
+                  to life in the browser.
+                </p>
+                <br />
+                <h4>Enjoy working with</h4>
+                <p className="text-left">HTML , EJS , REACTJS , NEXTJS</p>
+                <br/>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="feature_item">
+              
+                <h4><DeveloperModeOutlinedIcon /> { " "}Front-end Development</h4>
+               
+                <p className="text-left">
+                  I like to code things from scratch, and enjoy bringing ideas
+                  to life in the browser.
+                </p>
+                <br />
+                <h4>Enjoy working with</h4>
+                <p className="text-left">
+                  MERN Stack Developer ,firebase , github , netlify , React
+                  Native
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section className='mt-5'>
+          <div className="col-12">
+            <div className="feature_item feature_quote">
+              <FormatQuoteTwoToneIcon fontSize='large'/>
+              <h5 className="text-center">
+                “A successful website does three things: It attracts the right
+                kinds of visitors. Guides them to the main services or product
+                you offer. Collect Contact details for future ongoing relation.”
+               
+              </h5>
+              <h4> ― Mohamed Saad</h4>
+              <br />
+            </div>
+          </div>
+        </section>
       </section>
     </section>
   );
