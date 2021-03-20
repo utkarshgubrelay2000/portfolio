@@ -1,7 +1,11 @@
-import React from "react";
+import React,{useState} from "react";
 import {Link} from 'react-router-dom'
+import Modal from '../Modal/Modal'
 export default function Navbar() {
+	const [show, setShow] = useState(false);
 
+	const handleClose = () => setShow(false);
+	const handleShow = () => setShow(true);
   
   return (
     <section>
@@ -22,7 +26,11 @@ export default function Navbar() {
 								<li className="nav-item">
 								
 								<Link  className='nav-link cta-btn'>
+								<button   class="btn cta-btn" data-toggle="modal" data-target="#exampleModal" onClick={handleShow} >
+
 									Say Hello
+									</button>
+									<Modal show={show} handleClose={handleClose}/>
 								</Link>
 								
 									</li>
