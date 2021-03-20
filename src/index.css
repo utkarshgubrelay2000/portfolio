@@ -266,3 +266,130 @@ code {
     opacity: 1;
   }
 }
+.imgDiv:hover{
+  transition: ease-out;
+display: none;
+}
+.imgDiv{
+  background-color: black;
+   height: 300px;
+}
+.imgDiv:hover.img-hover-details{
+  display: none;
+  height: 300px;
+width: 200px;
+  background-color: #333333;
+}
+.img-hover-details:hover{
+  display: inline;
+}
+.item-single .spacer {
+  width: 100%;
+  min-height: 150px;
+}
+ .item-single img {
+  border-radius: 5px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+   .item-single img {
+    width: 100% !important;
+  }
+}
+.item-single .content {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 25px 16px;
+  width: 100%;
+  max-width: calc(100% - 30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0 0 30px 0 rgba(102, 102, 102, 0.09);
+  box-shadow: 0 0 30px 0 rgba(102, 102, 102, 0.09);
+}
+.item-single .content i {
+  color: #797979;
+  margin-right: 4px;
+  vertical-align: -1px;
+}
+.item-single .content span {
+  color: #797979;
+  font-size: 14px;
+}
+.item-single .content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.item-single .content h3 a {
+  color: #090031;
+}
+.item-single .content h3 a:hover {
+  color: #fd5056;
+}
+.item-single .content p {
+  padding-top: 15px;
+  display: none;
+  font-size: 15px;
+}
+.item-single .content .list {
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.item-single .content .list li {
+  display: inline-block;
+  margin-right: 12px;
+  color: #797979;
+}
+.item-single .content .list li:last-child {
+  font-weight: 600;
+  margin-right: 0;
+  color: #fd5056;
+  margin-left: auto;
+}
+.item-single:hover .content {
+  background: #4141a5;
+  -webkit-animation: fadeInUp 0.3s linear 1;
+  animation: fadeInUp 0.3s linear 1;
+}
+.item-single:hover .content i {
+  color: #d6d6d6;
+}
+.item-single:hover .content span {
+  color: #d6d6d6;
+}
+.item-single:hover .content h3 a {
+  -webkit-transition: none;
+  transition: none;
+  
+}
+.item-single:hover .content h3 a:hover {
+  text-decoration: underline;
+}
+.item-single:hover .content .list li {
+  color: #d6d6d6;
+}
+.item-single:hover .content .list li:last-child {
+  color: #fff;
+}
+.item-single:hover .content p {
+  
+  display: block;
+}
+.item-single{
+  position: relative;
+  overflow: hidden;
+}
+.image {
+  position: relative;
+ height: 150px;
+ 
+}

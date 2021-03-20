@@ -1,18 +1,49 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ReactTypingEffect from "react-typing-effect";
-import FormatColorFillIcon from '@material-ui/icons/FormatColorFillTwoTone';
-import DeveloperModeOutlinedIcon from '@material-ui/icons/DeveloperModeOutlined';
-import WebAssetTwoToneIcon from '@material-ui/icons/WebAssetTwoTone'
-import FormatQuoteTwoToneIcon from '@material-ui/icons/FormatQuoteTwoTone';
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import FormatColorFillIcon from "@material-ui/icons/FormatColorFillTwoTone";
+import DeveloperModeOutlinedIcon from "@material-ui/icons/DeveloperModeOutlined";
+import WebAssetTwoToneIcon from "@material-ui/icons/WebAssetTwoTone";
+import FormatQuoteTwoToneIcon from "@material-ui/icons/FormatQuoteTwoTone";
+import Card from "../card/Card";
+import Aos from "aos";
+import "aos/dist/aos.css";
 export default function Home() {
-  useEffect(()=>{
-    Aos.init({duration:2000})
-  },[])
+  const [cardItem, setCartItems] = useState([
+    {
+      imgUrl: "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
+      descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiu",
+      head: "Ekluvya Coaching",
+      url:"https://classes.ekluvya.guru/",cardStyle:{color:'black',background:'white'}
+    },
+    {
+      imgUrl: "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
+      descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiu",
+      head: "Ekluvya Coaching",
+      url:"https://classes.ekluvya.guru/",cardStyle:{color:'black',background:'white'}
+    }, {
+      imgUrl: "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
+      descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiu",
+      head: "Ekluvya Coaching",
+      url:"https://classes.ekluvya.guru/",cardStyle:{color:'black',background:'white'}
+    }, {
+      imgUrl: "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
+      descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiu",
+      head: "Ekluvya Coaching",
+      url:"https://classes.ekluvya.guru/",cardStyle:{color:'black',background:'white'}
+    }, {
+      imgUrl: "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
+      descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiu",
+      head: "MEHR GLOBAL CONSULTANY",
+      url:"https://classes.ekluvya.guru/",cardStyle:{color:'black',background:'white'}
+    },
+  
+  ]);
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <section >
+    <section>
       <section className="home_banner_area home_banner">
         <div className="container box_1620">
           <div className="banner_inner d-flex align-items-center">
@@ -25,11 +56,13 @@ export default function Home() {
                     alt=""
                   />
                 </div>
-                 <div className="media-body col-md-6 col-12">
+                <div className="media-body col-md-6 col-12">
                   <div className="personal_text" style={{ color: "black" }}>
                     <h6>Hello Everybody, i am</h6>
-                    <h3 className='animate__bounceInLeft'>Utkarsh Gubrelay</h3>
-                    <div class="animate__animated animate__bounce animate__repeat-2">Example</div>
+                    <h3 className="animate__bounceInLeft">Utkarsh Gubrelay</h3>
+                    <div className="animate__animated animate__bounce animate__repeat-2">
+                      Example
+                    </div>
                     <h5>
                       <ReactTypingEffect
                         text={[
@@ -51,8 +84,8 @@ export default function Home() {
                     <ul className="list basic_info">
                       <li>
                         <Link to="#">
-                          <i className="lnr lnr-calendar-full"></i> 19 September,
-                          2000
+                          <i className="lnr lnr-calendar-full"></i> 19
+                          September, 2000
                         </Link>
                       </li>
                       <li>
@@ -68,7 +101,8 @@ export default function Home() {
                       </li>
                       <li>
                         <Link to="#">
-                          <i className="lnr lnr-home"></i> Santa monica bullevard
+                          <i className="lnr lnr-home"></i> Santa monica
+                          bullevard
                         </Link>
                       </li>
                     </ul>
@@ -91,7 +125,7 @@ export default function Home() {
                     </ul>
                   </div>
                 </div>
-             </div>
+              </div>
             </div>
           </div>
         </div>
@@ -102,7 +136,7 @@ export default function Home() {
           <div className="row welcome_inner">
             <div className="col-lg-6">
               <div className="welcome_text">
-                <h4 className='primary-color'>About Myself</h4>
+                <h4 className="primary-color">About Myself</h4>
                 <p>
                   inappropriate behavior is often laughed off as “boys will be
                   boys,” women face higher conduct standards especially in the
@@ -136,7 +170,7 @@ export default function Home() {
 
                       <h6>Higher education</h6>
                       <p>pursing for Mtech 5years</p>
-                      <br/>
+                      <br />
                       <h6>Schooling (2019)</h6>
                       <p>
                         12th -: 83%
@@ -175,7 +209,7 @@ export default function Home() {
                     <h4>
                       Html, css, javaScript <span className="counter">80</span>%
                     </h4>
-                    
+
                     <div className="progress_br">
                       <div className="progress">
                         <div className="pB2"></div>
@@ -229,12 +263,12 @@ export default function Home() {
               as $.17 each.
             </p>
           </div>
-          <div className="feature_inner row" data-aos='fade-left'>
+          <div className="feature_inner row" data-aos="fade-left">
             <div className="col-lg-4 col-md-6">
               <div className="feature_item">
-              
-
-                <h4><FormatColorFillIcon /> { " "}Designer</h4>
+                <h4>
+                  <FormatColorFillIcon /> Designer
+                </h4>
                 <p className="text-left">
                   I value simple content structure, clean design patterns, and
                   thoughtful interactions.
@@ -242,15 +276,15 @@ export default function Home() {
                 <br />
                 <h4>Services</h4>
                 <p className="text-left">UX , UI , Web , Apps , Logos</p>
-                <br/>
-              
+                <br />
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
               <div className="feature_item">
-              
-                <h4><WebAssetTwoToneIcon /> { " "}Front-end Development</h4>
-           
+                <h4>
+                  <WebAssetTwoToneIcon /> Front-end Development
+                </h4>
+
                 <p className="text-left">
                   I like to code things from scratch, and enjoy bringing ideas
                   to life in the browser.
@@ -258,14 +292,15 @@ export default function Home() {
                 <br />
                 <h4>Enjoy working with</h4>
                 <p className="text-left">HTML , EJS , REACTJS , NEXTJS</p>
-                <br/>
+                <br />
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
               <div className="feature_item">
-              
-                <h4><DeveloperModeOutlinedIcon /> { " "}Front-end Development</h4>
-               
+                <h4>
+                  <DeveloperModeOutlinedIcon /> Front-end Development
+                </h4>
+
                 <p className="text-left">
                   I like to code things from scratch, and enjoy bringing ideas
                   to life in the browser.
@@ -281,15 +316,14 @@ export default function Home() {
           </div>
         </div>
 
-        <section className='mt-5'>
+        <section className="mt-5">
           <div className="col-12">
             <div className="feature_item feature_quote">
-              <FormatQuoteTwoToneIcon fontSize='large'/>
-              <h5 className="text-center  feature_quoteh5" >
+              <FormatQuoteTwoToneIcon fontSize="large" />
+              <h5 className="text-center  feature_quoteh5">
                 “A successful website does three things: It attracts the right
                 kinds of visitors. Guides them to the main services or product
                 you offer. Collect Contact details for future ongoing relation.”
-               
               </h5>
               <h4> ― Mohamed Saad</h4>
               <br />
@@ -297,98 +331,32 @@ export default function Home() {
           </div>
         </section>
       </section>
-      <section class="home_gallery_area p_120 animate">
-        	<div class="container"  >
-        		<div class="main_title">
-        			<h2>Recent Projects</h2>
-        			<p>Who are in extremely love with eco friendly system.</p>
-        		</div>
-        		
-        	</div>
-        	<div class="container"  data-aos='fade-up'>
-        		<div class="gallery_f_inner row imageGallery1">
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-1.jpg" alt=""/>
-        						<a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""/></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>3D Helmet Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-2.jpg" alt=""/>
-        						<a class="light" href="img/gallery/project-2.jpg">
-                      <img src="img/gallery/icon.png" alt=""/></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>2D Vinyl Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-3.jpg" alt=""/>
-        						<a class="light" href="img/gallery/project-3.jpg">
-                      <img src="img/gallery/icon.png" alt=""/></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Creative Poster Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-4.jpg" alt=""/>
-        						<a class="light" href="img/gallery/project-4.jpg"><img src="img/gallery/icon.png" alt=""/></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Embosed Logo Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-5.jpg" alt=""/>
-        						<a class="light" href="img/gallery/project-5.jpg"><img src="img/gallery/icon.png" alt=""/></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>3D Disposable Bottle</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-6.jpg" alt=""/>
-        						<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""/></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>3D Logo Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        		<div class="more_btn">
-        			<a class="main_btn" href="#">Load More Items</a>
-        		</div>
-        	</div>
-        </section>
-   
-   
+      <section className="home_gallery_area p_120 animate">
+        <div className="container">
+          <div className="main_title">
+            <h2>Recent Projects</h2>
+            <p>Who are in extremely love with eco friendly system.</p>
+          </div>
+        </div>
+        <div className="container" data-aos="fade-up">
+          <div className="gallery_f_inner row imageGallery1">
+            {cardItem.map((item) => {
+              console.log(item)
+              return(
+
+                <div className="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
+                <Card carditems={item} />{" "}
+              </div>
+                )
+            })}{" "}
+          </div>
+          <div className="more_btn">
+            <a className="main_btn" href="#">
+              Load More Items
+            </a>
+          </div>
+        </div>
+      </section>
     </section>
   );
 }
