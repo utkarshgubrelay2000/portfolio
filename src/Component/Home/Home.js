@@ -11,33 +11,46 @@ import "aos/dist/aos.css";
 export default function Home() {
   const [cardItem, setCartItems] = useState([
     {
-      imgUrl: "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
+      imgUrl:
+        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
       descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiu",
       head: "Ekluvya Coaching",
-      url:"https://classes.ekluvya.guru/",cardStyle:{color:'black',background:'white'}
+      url: "https://classes.ekluvya.guru/",
+      cardStyle: { color: "black", background: "white" },
     },
     {
-      imgUrl: "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
+      imgUrl:
+        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
       descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiu",
       head: "Ekluvya Coaching",
-      url:"https://classes.ekluvya.guru/",cardStyle:{color:'black',background:'white'}
-    }, {
-      imgUrl: "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
-      descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiu",
-      head: "Ekluvya Coaching",
-      url:"https://classes.ekluvya.guru/",cardStyle:{color:'black',background:'white'}
-    }, {
-      imgUrl: "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
-      descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiu",
-      head: "Ekluvya Coaching",
-      url:"https://classes.ekluvya.guru/",cardStyle:{color:'black',background:'white'}
-    }, {
-      imgUrl: "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
-      descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiu",
-      head: "MEHR GLOBAL CONSULTANY",
-      url:"https://classes.ekluvya.guru/",cardStyle:{color:'black',background:'white'}
+      url: "https://classes.ekluvya.guru/",
+      cardStyle: { color: "black", background: "white" },
     },
-  
+    {
+      imgUrl:
+        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
+      descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiu",
+      head: "Ekluvya Coaching",
+      url: "https://classes.ekluvya.guru/",
+      cardStyle: { color: "black", background: "white" },
+    },
+    {
+      imgUrl:
+        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
+      descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiu",
+      head: "Ekluvya Coaching",
+      url: "https://classes.ekluvya.guru/",
+      cardStyle: { color: "black", background: "white" },
+    },
+    {
+      imgUrl:
+        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
+      descrpition:
+        "lorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiu",
+      head: "MEHR GLOBAL CONSULTANY",
+      url: "https://classes.ekluvya.guru/",
+      cardStyle: { color: "black", background: "white" },
+    },
   ]);
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -166,16 +179,10 @@ export default function Home() {
                   </div>
                   <div className="col-md-6">
                     <div className="wel_item">
-                      <h5>Education</h5>
-
-                      <h6>Higher education</h6>
-                      <p>pursing for Mtech 5years</p>
-                      <br />
-                      <h6>Schooling (2019)</h6>
-                      <p>
-                        12th -: 83%
-                        <br />
-                        10th -: 9.0 CGPA
+                      <h5>Friendly With</h5>
+                      <p className='friendly'>
+                        git & github , netlify , heroku , firebase , payment
+                        gateways , ghost.io , contentful
                       </p>
                     </div>
                   </div>
@@ -189,7 +196,7 @@ export default function Home() {
                     <h4>
                       React js <span className="counter">75</span>%
                     </h4>
-                    <div className="progress_br">
+                    <div className="progress_br" data-aos="fade-right">
                       <div className="progress">
                         <div className="pB"></div>
                       </div>
@@ -199,7 +206,7 @@ export default function Home() {
                     <h4>
                       Nodejs <span className="counter">80</span>%
                     </h4>
-                    <div className="progress_br">
+                    <div className="progress_br" data-aos="fade-right">
                       <div className="progress">
                         <div className="pB1"></div>
                       </div>
@@ -210,7 +217,7 @@ export default function Home() {
                       Html, css, javaScript <span className="counter">80</span>%
                     </h4>
 
-                    <div className="progress_br">
+                    <div className="progress_br" data-aos="fade-right">
                       <div className="progress">
                         <div className="pB2"></div>
                       </div>
@@ -220,7 +227,7 @@ export default function Home() {
                     <h4>
                       React Native <span className="counter">65</span>%
                     </h4>
-                    <div className="progress_br">
+                    <div className="progress_br" data-aos="fade-right">
                       <div className="progress">
                         <div className="pB3"></div>
                       </div>
@@ -228,9 +235,9 @@ export default function Home() {
                   </div>
                   <div className="skill_item">
                     <h4>
-                      git & github <span className="counter">75</span>%
+                      Mongodb <span className="counter">75</span>%
                     </h4>
-                    <div className="progress_br">
+                    <div className="progress_br" data-aos="fade-right">
                       <div className="progress">
                         <div className="pB4"></div>
                       </div>
@@ -240,7 +247,7 @@ export default function Home() {
                     <h4>
                       Wordpress <span className="counter">65</span>%
                     </h4>
-                    <div className="progress_br">
+                    <div className="progress_br" data-aos="fade-right">
                       <div className="progress">
                         <div className="pB5"></div>
                       </div>
@@ -341,13 +348,12 @@ export default function Home() {
         <div className="container" data-aos="fade-up">
           <div className="gallery_f_inner row imageGallery1">
             {cardItem.map((item) => {
-              console.log(item)
-              return(
-
+              console.log(item);
+              return (
                 <div className="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-                <Card carditems={item} />{" "}
-              </div>
-                )
+                  <Card carditems={item} />{" "}
+                </div>
+              );
             })}{" "}
           </div>
           <div className="more_btn">

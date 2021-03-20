@@ -61,6 +61,17 @@ input:focus {
 /* ------------------------
     Typography
 ------------------------*/
+p{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-size: 15px;
+  color: #090031;
+}
 h1,
 h2,
 h3,
@@ -68,11 +79,12 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
-  font-weight: normal;
+ 
   margin-top: 0px;
   margin-bottom: 0px;
-  text-transform: uppercase;
+ 
   letter-spacing: 1px;
+  font-weight: 900;
 }
 h1 a,
 h2 a,
