@@ -1,11 +1,16 @@
 import React,{useState} from "react";
 import {Link} from 'react-router-dom'
 import Modal from '../Modal/Modal'
+import Pdf from './myResume.pdf'
 export default function Navbar() {
 	const [show, setShow] = useState(false);
 
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
+	const [resumeShow, setResumeShow] = useState(false);
+
+	const handleResume = () => setShow(false);
+	const handleResumeShow = () => setShow(true);
   
   return (
     <section>
@@ -14,7 +19,8 @@ export default function Navbar() {
             	<nav className="navbar navbar-expand-lg navbar-light">
 					<div className="container box_1620">
 					
-						<Link className="navbar-brand logo_h" href="index.html"><img src="img/logo.png" style={{width:'60px'}} alt=""/></Link>
+					{/* <Link className="navbar-brand logo_h" href="/"><img src="img/logo.png"
+						style={{width:'60px'}} alt=""/></Link> */}
 						<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span className="icon-bar"></span>
 							<span className="icon-bar"></span>
@@ -26,7 +32,8 @@ export default function Navbar() {
 								<li className="nav-item">
 								
 								<Link  className='nav-link cta-btn'>
-								<button   class="btn cta-btn" data-toggle="modal" data-target="#exampleModal" onClick={handleShow} >
+								<button   class="btn cta-btn" data-toggle="modal"
+								 data-target="#exampleModal" onClick={handleShow} >
 
 									Say Hello
 									</button>
@@ -36,9 +43,10 @@ export default function Navbar() {
 									</li>
 									<li className="nav-item">
 								
-								<Link  className='nav-link cta-btn dark-border'>
+								<a href={Pdf}  className='nav-link cta-btn dark-border'  >
 									Resume
-								</Link>
+									
+								</a>
 								
 									</li>	</ul>
 						</div> 

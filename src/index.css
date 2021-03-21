@@ -265,7 +265,7 @@ code {
   color: #27678b;
 }
 .home_banner {
-  background-image: -webkit-linear-gradient(0deg, #9c56f7 0%, #7510f7 100%);
+  background-image: -webkit-linear-gradient(0deg,#adc2cd 60%, #afc3ce 100%);
 }
 .animate{
   animation: fade-in 2s ease-in;

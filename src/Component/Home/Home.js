@@ -53,7 +53,7 @@ export default function Home() {
     },
   ]);
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init();
   }, []);
   return (
     <section>
@@ -72,16 +72,14 @@ export default function Home() {
                 <div className="media-body col-md-6 col-12">
                   <div className="personal_text" style={{ color: "black" }}>
                     <h6>Hello Everybody, i am</h6>
-                    <h3 className="animate__bounceInLeft">Utkarsh Gubrelay</h3>
-                    <div className="animate__animated animate__bounce animate__repeat-2">
-                      Example
-                    </div>
+                    <h3  >Utkarsh Gubrelay</h3>
                     <h5>
                       <ReactTypingEffect
                         text={[
                           "MERN STACK Developer",
                           "WEB DESIGNER",
                           "WEB DEVELOPER",
+                          "APP DEVELOPER"
                         ]}
                         speed={300}
                         eraseDelay={2000}
@@ -162,12 +160,12 @@ export default function Home() {
                     <div className="wel_item">
                       <h6>Working Experience</h6>
 
-                      <p>
+                      <p className='friendly' style={{color:'black'}}>
                         currently working in{" "}
                         <a href="thebrandwick.com">BrandWick</a>
                       </p>
                       <br />
-                      <p>
+                      <p className='friendly' style={{color:'black'}}>
                         intern at
                         <a href="https://www.onit.digital/">
                           {" "}
@@ -180,7 +178,7 @@ export default function Home() {
                   <div className="col-md-6">
                     <div className="wel_item">
                       <h5>Friendly With</h5>
-                      <p className='friendly'>
+                      <p className='friendly' style={{color:'black'}}>
                         git & github , netlify , heroku , firebase , payment
                         gateways , ghost.io , contentful
                       </p>
@@ -345,7 +343,7 @@ export default function Home() {
             <p>Who are in extremely love with eco friendly system.</p>
           </div>
         </div>
-        <div className="container" data-aos="fade-up">
+        <div className="container" data-aos="fade-down">
           <div className="gallery_f_inner row imageGallery1">
             {cardItem.map((item) => {
               console.log(item);
