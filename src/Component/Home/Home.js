@@ -12,16 +12,18 @@ export default function Home() {
   const [cardItem, setCartItems] = useState([
     {
       imgUrl:
-      "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
-      descrpition: "Ekluvya Coaching is a WebApp from providing Online Eduation...",
+        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
+      descrpition:
+        "Ekluvya Coaching is a WebApp from providing Online Eduation...",
       head: "Ekluvya Coaching",
       url: "https://classes.ekluvya.guru/",
       cardStyle: { color: "black", background: "white" },
     },
     {
       imgUrl:
-      "https://res.cloudinary.com/dvu7miswu/image/upload/v1616530452/wdshsqzg9ffeenrqs3vs.png",
-      descrpition: "Rentzy is a onGoing rental App.. handle Backend for User and Admin Side",
+        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616530452/wdshsqzg9ffeenrqs3vs.png",
+      descrpition:
+        "Rentzy is a onGoing rental App.. handle Backend for User and Admin Side",
       head: "Rentzy",
       url: "https://play.google.com/store/apps/details?id=com.rentzytbw",
       cardStyle: { color: "black", background: "white" },
@@ -34,7 +36,7 @@ export default function Home() {
       url: "#",
       cardStyle: { color: "black", background: "white" },
     },
-   
+
     {
       imgUrl:
         "https://res.cloudinary.com/dvu7miswu/image/upload/v1616530455/er7gj9umsybxn4inwhyx.png",
@@ -65,14 +67,14 @@ export default function Home() {
                 <div className="media-body col-md-6 col-12">
                   <div className="personal_text" style={{ color: "black" }}>
                     <h6>Hello Everybody, i am</h6>
-                    <h3  >Utkarsh Gubrelay</h3>
+                    <h3>Utkarsh Gubrelay</h3>
                     <h5>
                       <ReactTypingEffect
                         text={[
                           "MERN STACK Developer",
                           "WEB DESIGNER",
                           "WEB DEVELOPER",
-                          "APP DEVELOPER"
+                          "APP DEVELOPER",
                         ]}
                         speed={300}
                         eraseDelay={2000}
@@ -86,7 +88,6 @@ export default function Home() {
                       Scrooge some different futures)
                     </p>
                     <ul className="list basic_info">
-                     
                       <li>
                         <a href="telto:7489279080">
                           <i className="lnr lnr-phone-handset"></i> 7489279080
@@ -98,7 +99,6 @@ export default function Home() {
                           utkarshgubrelay2000@gmail.com
                         </a>
                       </li>
-                     
                     </ul>
                     <ul className="list personal_social">
                       <li>
@@ -132,23 +132,26 @@ export default function Home() {
               <div className="welcome_text">
                 <h4 className="primary-color">About Myself</h4>
                 <p>
-                  inappropriate behavior is often laughed off as “boys will be
-                  boys,” women face higher conduct standards especially in the
-                  workplace. That’s why it’s crucial that, as women, our
-                  behavior on the job is beyond reproach. inappropriate behavior
-                  is often laughed.
+                  I am Utkarsh Gubrelay.. I have completed my schooling from
+                  Hoshangabad and currently pursingmy Mtech(I.T) Degree From
+                  International Institute of Professional Studies college ,Davv Indore .I am Hardworking ,creative and enthusiastic
+           toward my work..
+           i will be glad to work with you and showcase my skills . you Can
+           <a href="mailto:utkarshgubrelay2000@gmail.com">
+              Contact Me
+             </a>
                 </p>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="wel_item">
                       <h6>Working Experience</h6>
 
-                      <p className='friendly' style={{color:'black'}}>
+                      <p className="friendly" style={{ color: "black" }}>
                         currently working in{" "}
                         <a href="thebrandwick.com">BrandWick</a>
                       </p>
                       <br />
-                      <p className='friendly' style={{color:'black'}}>
+                      <p className="friendly" style={{ color: "black" }}>
                         intern at
                         <a href="https://www.onit.digital/">
                           {" "}
@@ -161,7 +164,7 @@ export default function Home() {
                   <div className="col-md-6">
                     <div className="wel_item">
                       <h5>Friendly With</h5>
-                      <p className='friendly' style={{color:'black'}}>
+                      <p className="friendly" style={{ color: "black" }}>
                         git & github , netlify , heroku , firebase , payment
                         gateways , ghost.io , contentful
                       </p>
@@ -246,8 +249,9 @@ export default function Home() {
           <div className="main_title">
             <h2>offerings to my clients</h2>
             <p>
-             I can assure you to give you desired content within the given time ..
-             <br/> Things that are offer are
+              I can assure you to give you desired content within the given time
+              ..
+              <br /> Things that are offer are
             </p>
           </div>
           <div className="feature_inner row" data-aos="fade-left">
