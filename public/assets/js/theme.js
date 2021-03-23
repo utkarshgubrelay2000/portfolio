@@ -21,7 +21,17 @@
         };
     };
     navbarFixed();
-	
+    function testSp()
+    {
+      setTimeout(() => {
+        
+        var loader = document.getElementById('loader') ;
+        loader.style.display = 'none' ;
+      //  root.style.display = 'inline' ;
+      }, 1000);
+    }
+    window.onload=testSp;
+  
 	
 	/*----------------------------------------------------*/
     /*  Parallax Effect js

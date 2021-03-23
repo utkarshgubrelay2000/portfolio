@@ -293,6 +293,20 @@ button:focus {
       height: auto;
       margin-top: -6px;
       right: 20px; }
+ .ytp-button{
+    display: none;
+  }
+
+#loader{
+ 
+background-color: black;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height: 100vh;
+}
+
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
