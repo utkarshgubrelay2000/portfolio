@@ -12,43 +12,36 @@ export default function Home() {
   const [cardItem, setCartItems] = useState([
     {
       imgUrl:
-        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
-      descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiu",
+      "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
+      descrpition: "Ekluvya Coaching is a WebApp from providing Online Eduation...",
       head: "Ekluvya Coaching",
       url: "https://classes.ekluvya.guru/",
       cardStyle: { color: "black", background: "white" },
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
-      descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiu",
-      head: "Ekluvya Coaching",
-      url: "https://classes.ekluvya.guru/",
+      "https://res.cloudinary.com/dvu7miswu/image/upload/v1616530452/wdshsqzg9ffeenrqs3vs.png",
+      descrpition: "Rentzy is a onGoing rental App.. handle Backend for User and Admin Side",
+      head: "Rentzy",
+      url: "https://play.google.com/store/apps/details?id=com.rentzytbw",
       cardStyle: { color: "black", background: "white" },
     },
     {
       imgUrl:
         "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
-      descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiu",
-      head: "Ekluvya Coaching",
-      url: "https://classes.ekluvya.guru/",
+      descrpition: "Lddar is a Website for providing Online Course ...",
+      head: "Lddar",
+      url: "#",
       cardStyle: { color: "black", background: "white" },
     },
+   
     {
       imgUrl:
-        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
-      descrpition: "lorum ipsum thius ishajssudiag sjkdgsdugaiu",
-      head: "Ekluvya Coaching",
-      url: "https://classes.ekluvya.guru/",
-      cardStyle: { color: "black", background: "white" },
-    },
-    {
-      imgUrl:
-        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
+        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616530455/er7gj9umsybxn4inwhyx.png",
       descrpition:
-        "lorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiulorum ipsum thius ishajssudiag sjkdgsdugaiu",
+        "Mehr Global Consultancy Pvt Ltd is a world class Consultancy and Training company having footprints across India, Saudi Arabia, UAE, Netherland, Australia and Canada serving since 2002.",
       head: "MEHR GLOBAL CONSULTANY",
-      url: "https://classes.ekluvya.guru/",
+      url: "https://www.mehrconsultants.com/",
       cardStyle: { color: "black", background: "white" },
     },
   ]);
@@ -93,12 +86,7 @@ export default function Home() {
                       Scrooge some different futures)
                     </p>
                     <ul className="list basic_info">
-                      <li>
-                        <Link to="#">
-                          <i className="lnr lnr-calendar-full"></i> 19
-                          September, 2000
-                        </Link>
-                      </li>
+                     
                       <li>
                         <a href="telto:7489279080">
                           <i className="lnr lnr-phone-handset"></i> 7489279080
@@ -110,12 +98,7 @@ export default function Home() {
                           utkarshgubrelay2000@gmail.com
                         </a>
                       </li>
-                      <li>
-                        <Link to="#">
-                          <i className="lnr lnr-home"></i> Santa monica
-                          bullevard
-                        </Link>
-                      </li>
+                     
                     </ul>
                     <ul className="list personal_social">
                       <li>
@@ -263,9 +246,8 @@ export default function Home() {
           <div className="main_title">
             <h2>offerings to my clients</h2>
             <p>
-              If you are looking at blank cassettes on the web, you may be very
-              confused at the difference in price. You may see some for as low
-              as $.17 each.
+             I can assure you to give you desired content within the given time ..
+             <br/> Things that are offer are
             </p>
           </div>
           <div className="feature_inner row" data-aos="fade-left">
@@ -339,7 +321,7 @@ export default function Home() {
       <section className="home_gallery_area p_120 animate">
         <div className="container">
           <div className="main_title">
-            <h2>Recent Projects</h2>
+            <h2> Projects</h2>
             <p>Who are in extremely love with eco friendly system.</p>
           </div>
         </div>
@@ -348,16 +330,11 @@ export default function Home() {
             {cardItem.map((item) => {
               console.log(item);
               return (
-                <div className="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
+                <div className="col-lg-3 col-md-3 col-sm-6 brand manipul design print">
                   <Card carditems={item} />{" "}
                 </div>
               );
             })}{" "}
-          </div>
-          <div className="more_btn">
-            <a className="main_btn" href="#">
-              Load More Items
-            </a>
           </div>
         </div>
       </section>
