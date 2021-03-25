@@ -5,9 +5,14 @@ import FormatColorFillIcon from "@material-ui/icons/FormatColorFillTwoTone";
 import DeveloperModeOutlinedIcon from "@material-ui/icons/DeveloperModeOutlined";
 import WebAssetTwoToneIcon from "@material-ui/icons/WebAssetTwoTone";
 import FormatQuoteTwoToneIcon from "@material-ui/icons/FormatQuoteTwoTone";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import InstagramIcon from "@material-ui/icons/Instagram";
 import Card from "../card/Card";
 import Aos from "aos";
+import PhoneIcon from '@material-ui/icons/Phone';
 import "aos/dist/aos.css";
+import { EmailOutlined } from "@material-ui/icons";
 export default function Home() {
   const [cardItem, setCartItems] = useState([
     {
@@ -81,39 +86,36 @@ export default function Home() {
                         eraseSpeed={300}
                       />
                     </h5>
-
-                    <p>
-                      You will begin to realise why this exercise is called the
-                      Dickens Pattern (with reference to the ghost showing
-                      Scrooge some different futures)
-                    </p>
                     <ul className="list basic_info">
                       <li>
                         <a href="telto:7489279080">
-                          <i className="lnr lnr-phone-handset"></i> 7489279080
+                          <PhoneIcon/> 7489279080
                         </a>
                       </li>
                       <li>
                         <a href="mailto:utkarshgubrelay2000@gmail.com">
                           <i className="lnr lnr-envelope"></i>{" "}
-                          utkarshgubrelay2000@gmail.com
+                       <EmailOutlined/>   utkarshgubrelay2000@gmail.com
                         </a>
                       </li>
                     </ul>
                     <ul className="list personal_social">
                       <li>
-                        <Link to="#">
-                          <i className="fa fa-facebook"></i>
+                        <Link >
+                        <a href="https://github.com/utkarshgubrelay2000/">
+                      <GitHubIcon />
+                    </a>
                         </Link>
                       </li>
                       <li>
-                        <Link to="#">
-                          <i className="fa fa-twitter"></i>
+                        <Link >
+                        <li><a href="https://in.linkedin.com/public-profile/in/utkarsh-gubrelay-860511194?challengeId=AQH1RYthZUJhzgAAAXhrYTxY9r8y9Qv-VqoPCbrA8b9ynM9lAyRGS6qTMyMiYmkcuNod-ZjlD4jcDbCE0s13nddiiDHyvw1dug&submissionId=f9d38364-7cb4-6f16-fbf7-5be9abbade2a"><LinkedInIcon/></a></li>
+        						
                         </Link>
                       </li>
                       <li>
-                        <Link to="#">
-                          <i className="fa fa-linkedin"></i>
+                        <Link >
+                        <li><a href="https://www.instagram.com/utkarsh2000.9.19/"><InstagramIcon/> </a></li>
                         </Link>
                       </li>
                     </ul>
@@ -133,18 +135,18 @@ export default function Home() {
                 <h4 className="primary-color">About Myself</h4>
                 <p>
                   I am Utkarsh Gubrelay.. I have completed my schooling from
-                  Hoshangabad and currently pursingmy Mtech(I.T) Degree From
+                  Hoshangabad and currently pursing my Mtech(I.T) Degree From
                   International Institute of Professional Studies college ,Davv Indore .I am Hardworking ,creative and enthusiastic
            toward my work..
-           i will be glad to work with you and showcase my skills . you Can
+           i will be glad to work with you and showcase my skills . you Can {"  "}
            <a href="mailto:utkarshgubrelay2000@gmail.com">
-              Contact Me
+               Contact Me
              </a>
                 </p>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="wel_item">
-                      <h6>Working Experience</h6>
+                      <h4>Experience</h4>
 
                       <p className="friendly" style={{ color: "black" }}>
                         currently working in{" "}
@@ -163,8 +165,8 @@ export default function Home() {
                   </div>
                   <div className="col-md-6">
                     <div className="wel_item">
-                      <h5>Friendly With</h5>
-                      <p className="friendly" style={{ color: "black" }}>
+                      <h4 style={{color:'black'}}>Friendly With</h4>
+                      <p className="friendly" >
                         git & github , netlify , heroku , firebase , payment
                         gateways , ghost.io , contentful
                       </p>
@@ -316,7 +318,7 @@ export default function Home() {
                 kinds of visitors. Guides them to the main services or product
                 you offer. Collect Contact details for future ongoing relation.”
               </h5>
-              <h4> ― Mohamed Saad</h4>
+              <h4  style={{color:"#0e9ff3"}}className='author'> ― Mohamed Saad</h4>
               <br />
             </div>
           </div>
@@ -326,7 +328,7 @@ export default function Home() {
         <div className="container">
           <div className="main_title">
             <h2> Projects</h2>
-            <p>Who are in extremely love with eco friendly system.</p>
+            <p>Some of my Projects</p>
           </div>
         </div>
         <div className="container" data-aos="fade-down">
@@ -334,7 +336,7 @@ export default function Home() {
             {cardItem.map((item) => {
               console.log(item);
               return (
-                <div className="col-lg-6 col-md-6 col-sm-6 brand manipul design print">
+                <div className="col-lg-6  col-md-6 col-sm-6 brand manipul design print">
                   <Card carditems={item} />{" "}
                 </div>
               );

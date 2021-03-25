@@ -117,6 +117,7 @@ h4 {
   font-style: normal;
   font-weight: 600;
   color: #5f5e61;
+  font-variant: small-caps;
 }
 h5 {
   font-family: "Montserrat", sans-serif;
@@ -192,7 +193,7 @@ code {
 .pB2:after {
   content: "\A";
   position: absolute;
- background-image: -webkit-linear-gradient(180deg, #1b191f 60%, #000000 100%);
+ background-image: -webkit-linear-gradient(180deg, #0e9ff3 60%, #b4e5fd 100%);
   top: 0;
   bottom: 0;
   left: 0;
@@ -201,7 +202,7 @@ code {
 .pB:after {
   content: "\A";
   position: absolute;
-  background-image: -webkit-linear-gradient(180deg, #1b191f 60%, #000000 100%);
+  background-image: -webkit-linear-gradient(180deg, #0e9ff3 60%, #b4e5fd 100%);
   top: 0;
   bottom: 0;
   left: 0;
@@ -210,7 +211,7 @@ code {
 .pB3:after {
   content: "\A";
   position: absolute;
- background-image: -webkit-linear-gradient(180deg, #1b191f 60%, #000000 100%);
+  background-image: -webkit-linear-gradient(180deg, #0e9ff3 60%, #b4e5fd 100%);
   top: 0;
   bottom: 0;
   left: 0;
@@ -219,7 +220,7 @@ code {
 .pB1:after {
   content: "\A";
   position: absolute;
- background-image: -webkit-linear-gradient(180deg, #1b191f 60%, #000000 100%);
+  background-image: -webkit-linear-gradient(180deg, #0e9ff3 60%, #b4e5fd 100%);
   top: 0;
   bottom: 0;
   left: 0;
@@ -229,7 +230,7 @@ code {
 .pB4:after {
   content: "\A";
   position: absolute;
- background-image: -webkit-linear-gradient(180deg, #232125 60%, #000000 100%);
+  background-image: -webkit-linear-gradient(180deg, #0e9ff3 60%, #b4e5fd 100%);
   top: 0;
   bottom: 0;
   left: 0;
@@ -238,7 +239,7 @@ code {
 .pB5:after {
   content: "\A";
   position: absolute;
- background-image: -webkit-linear-gradient(180deg, #1b191f 60%, #000000 100%);
+  background-image: -webkit-linear-gradient(180deg, #0e9ff3 60%, #b4e5fd 100%);
   top: 0;
   bottom: 0;
   left: 0;
@@ -258,11 +259,11 @@ code {
 }
 .feature_quoteh5 {
   
-  color: #333333;
+  color: #62bff5;
 }
 .feature_quoteh5:hover {
   
-  color: #27678b;
+  color: #03121b;
 }
 .home_banner {
   background-image: -webkit-linear-gradient(0deg,#adc2cd 60%, #afc3ce 100%);

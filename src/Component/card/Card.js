@@ -13,9 +13,12 @@ export default function Card(props){
                                   {props.carditems.head}
                             </a>
                       </h5>
+                      <div className='text-left'>
+
                      
                         <p>{props.carditems.descrpition}
                         </p>
+                      </div>
                         <hr />
                       </div>
                       <div className="spacer"></div>
