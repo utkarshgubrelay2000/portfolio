@@ -30,10 +30,10 @@ export default function Home() {
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
-      descrpition: "Lddar is a Website for providing Online Course ...",
-      head: "Lddar",
-      url: "#",
+        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616708344/nmao0syj6sekx1rfwcbo.png",
+      descrpition: "FinLadder is a Website for providing Online Course ...",
+      head: "finladder",
+      url: "https://finladder.co/",
       cardStyle: { color: "black", background: "white" },
     },
 
@@ -334,7 +334,7 @@ export default function Home() {
             {cardItem.map((item) => {
               console.log(item);
               return (
-                <div className="col-lg-3 col-md-3 col-sm-6 brand manipul design print">
+                <div className="col-lg-6 col-md-6 col-sm-6 brand manipul design print">
                   <Card carditems={item} />{" "}
                 </div>
               );

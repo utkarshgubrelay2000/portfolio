@@ -34,18 +34,18 @@ export default function Navbar() {
               >
                 <ul className="nav navbar-nav menu_nav ml-auto">
                   <li className="nav-item">
-                    <Link className="nav-link cta-btn">
+                    <a href="mailto:utkarshgubrelay2000@gmail.com" className="nav-link cta-btn">
                       <button
                         class="btn cta-btn"
                         data-toggle="modal"
                         data-target="#exampleModal"
-                        onClick={handleShow}
+                       // onClick={handleShow}
 						
                       >
                         Say Hello
                       </button>
-                      <Modal show={show} handleClose={handleClose} />
-                    </Link>
+                      {/* <Modal show={show} handleClose={handleClose} /> */}
+                    </a>
                   </li>
                   <li className="nav-item">
                     <a href={Pdf} className="nav-link cta-btn dark-border">
