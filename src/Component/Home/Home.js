@@ -13,31 +13,96 @@ import Aos from "aos";
 import PhoneIcon from '@material-ui/icons/Phone';
 import "aos/dist/aos.css";
 import { EmailOutlined } from "@material-ui/icons";
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 export default function Home() {
   const [cardItem, setCartItems] = useState([
+    {
+      imgUrl:
+        "https://firebasestorage.googleapis.com/v0/b/propbear-io.appspot.com/o/propbear-light.png?alt=media&token=5a2bc978-4841-4960-8784-d69433015387",
+      descrpition:
+        "Working on Backend. ",
+      head: "Prop Bear",prod:false,
+      url: "https://app.propbear.io/",
+      cardStyle: { color: "black", background: "white" },
+    },
+    {
+      imgUrl:
+        "https://res.cloudinary.com/dvu7miswu/image/upload/v1637832750/qw4bfyvz5pthmlmdfjvd.png",
+      descrpition:
+        "Provides Services for immigrates",
+      head: "NBH Consultancy",prod:true,
+      url: "  https://nbhimmigration.com/",
+      cardStyle: { color: "black", background: "white" },
+    },
+  
+    {
+      imgUrl:
+        "https://inspirerworld.com/images/hero_image@2x.png",
+      descrpition:
+        "Inspirer World is a social media for content writers ",
+      head: "Inspirer World",prod:true,
+      url: "https://inspirerworld.com/",
+      cardStyle: { color: "black", background: "white" },
+    },
     {
       imgUrl:
         "https://res.cloudinary.com/dvu7miswu/image/upload/v1616269112/b7erasu3r0oothl72gwq.png",
       descrpition:
         "Ekluvya Coaching is a WebApp from providing Online Eduation...",
-      head: "Ekluvya Coaching",
+      head: "Ekluvya Coaching",prod:true,
       url: "https://classes.ekluvya.guru/",
       cardStyle: { color: "black", background: "white" },
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/dvu7miswu/image/upload/v1616530452/wdshsqzg9ffeenrqs3vs.png",
+        "https://www.whatcommute.com/official-logo.png",
       descrpition:
-        "Rentzy is a onGoing rental App.. handle Backend for User and Admin Side",
-      head: "Rentzy",
-      url: "https://play.google.com/store/apps/details?id=com.rentzytbw",
+        "Remote Your Job - Handled Backend",
+      head: "Ekluvya Coaching",prod:true,
+      url: "https://classes.ekluvya.guru/",
+      cardStyle: { color: "black", background: "white" },
+    },
+    {
+      imgUrl:
+        "https://res.cloudinary.com/dvu7miswu/image/upload/v1637833174/q5dvhdqec3qahlp1n9vi.png",
+      descrpition:
+        "KT project have four panels . I have handled Super Admin",
+      head: "Water Rocket",prod:false,
+      url: "https://water-rocket.netlify.app/#",
+      cardStyle: { color: "black", background: "white" },
+    },
+    {
+      imgUrl:
+        "https://imstocks-user.netlify.app/static/media/IM-HORIZONTAL-WEBSITE%201%20(1).3d08fc89.png",
+      descrpition:
+        "It is a learning platform for students",
+      head: "ImStocks",prod:false,
+      url: "https://imstocks-user.netlify.app/",
+      cardStyle: { color: "black", background: "white" },
+    },
+    {
+      imgUrl:
+        "https://riyft.com/wp-content/uploads/2021/11/RIYFT-Blue-with-tag-296x78.png",
+      descrpition: "Online Eduction Platform -Handled user and admin side backend",
+      head: "RYIFT",prod:true,
+      url: "https://riyft.com/",
+      cardStyle: { color: "black", background: "white" },
+    },
+    {
+      imgUrl:
+        "https://res.cloudinary.com/dvu7miswu/image/upload/v1637832219/irmwv0lpldtjblfyo8uh.png",
+      descrpition: "Shopping platform - Handled user and admin side backend",
+      head: "AMMARZO",prod:true,
+      url: "https://www.ammarzo.com/",
       cardStyle: { color: "black", background: "white" },
     },
     {
       imgUrl:
         "https://res.cloudinary.com/dvu7miswu/image/upload/v1616708344/nmao0syj6sekx1rfwcbo.png",
       descrpition: "FinLadder is a Website for providing Online Course ...",
-      head: "finladder",
+      head: "finladder",prod:true,
       url: "https://finladder.co/",
       cardStyle: { color: "black", background: "white" },
     },
@@ -47,7 +112,7 @@ export default function Home() {
         "https://res.cloudinary.com/dvu7miswu/image/upload/v1616530455/er7gj9umsybxn4inwhyx.png",
       descrpition:
         "Mehr Global Consultancy Pvt Ltd is a world class Consultancy and Training company having footprints across India, Saudi Arabia, UAE, Netherland, Australia and Canada serving since 2002.",
-      head: "MEHR GLOBAL CONSULTANY",
+      head: "MEHR GLOBAL CONSULTANY",prod:true,
       url: "https://www.mehrconsultants.com/",
       cardStyle: { color: "black", background: "white" },
     },
@@ -55,6 +120,30 @@ export default function Home() {
   useEffect(() => {
     Aos.init();
   }, []);
+let options={
+  loop:true,
+  margin:10,
+  autoplay:true,
+  autoplayTimeout:1000,
+  autoplayHoverPause:true,
+  responsive:{0 : {
+    items:1,  
+},
+480 : {
+  items:1,  
+},
+// breakpoint from 768 up
+768 : {
+  items:2,  
+}
+,
+1020 : {
+  items:3,   nav:true,
+  loop:false
+}
+,
+
+}}
   return (
     <section>
       <section className="home_banner_area home_banner">
@@ -133,7 +222,7 @@ export default function Home() {
             <div className="col-lg-6">
               <div className="welcome_text">
                 <h4 className="primary-color">About Myself</h4>
-                <p>
+                <p className='text-left'>
                   I am Utkarsh Gubrelay.. I have completed my schooling from
                   Hoshangabad and currently pursing my Mtech(I.T) Degree From
                   International Institute of Professional Studies college ,Davv Indore .I am Hardworking ,creative and enthusiastic
@@ -178,17 +267,7 @@ export default function Home() {
             <div className="col-lg-6">
               <div className="tools_expert">
                 <div className="skill_main">
-                  <div className="skill_item">
-                    <h4>
-                      React js <span className="counter">75</span>%
-                    </h4>
-                    <div className="progress_br" data-aos="fade-right">
-                      <div className="progress">
-                        <div className="pB"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="skill_item">
+                <div className="skill_item">
                     <h4>
                       Nodejs <span className="counter">80</span>%
                     </h4>
@@ -205,10 +284,32 @@ export default function Home() {
 
                     <div className="progress_br" data-aos="fade-right">
                       <div className="progress">
-                        <div className="pB2"></div>
+                        <div className="pB1"></div>
                       </div>
                     </div>
                   </div>
+                  <div className="skill_item">
+                    <h4>
+                      Mongodb <span className="counter">80</span>%
+                    </h4>
+                    <div className="progress_br" data-aos="fade-right">
+                      <div className="progress">
+                        <div className="pB1"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="skill_item">
+                    <h4>
+                      React js/NEXTJS <span className="counter">75</span>%
+                    </h4>
+                    <div className="progress_br" data-aos="fade-right">
+                      <div className="progress">
+                        <div className="pB"></div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  
                   <div className="skill_item">
                     <h4>
                       React Native <span className="counter">65</span>%
@@ -219,19 +320,10 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
+               
                   <div className="skill_item">
                     <h4>
-                      Mongodb <span className="counter">75</span>%
-                    </h4>
-                    <div className="progress_br" data-aos="fade-right">
-                      <div className="progress">
-                        <div className="pB4"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="skill_item">
-                    <h4>
-                      Wordpress <span className="counter">65</span>%
+                      Wordpress <span className="counter">55</span>%
                     </h4>
                     <div className="progress_br" data-aos="fade-right">
                       <div className="progress">
@@ -291,7 +383,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-6">
               <div className="feature_item">
                 <h4>
-                  <DeveloperModeOutlinedIcon /> Front-end Development
+                  <DeveloperModeOutlinedIcon /> Full Stack Work
                 </h4>
 
                 <p className="text-left">
@@ -324,6 +416,7 @@ export default function Home() {
           </div>
         </section>
       </section>
+     
       <section className="home_gallery_area p_120 animate">
         <div className="container">
           <div className="main_title">
@@ -333,14 +426,20 @@ export default function Home() {
         </div>
         <div className="container" data-aos="fade-down">
           <div className="gallery_f_inner row imageGallery1">
-            {cardItem.map((item) => {
-              console.log(item);
-              return (
-                <div className="col-lg-6  col-md-6 col-sm-6 brand manipul design print">
-                  <Card carditems={item} />{" "}
-                </div>
-              );
-            })}{" "}
+            
+          <OwlCarousel {...options}  className='owl-theme' loop margin={10} nav>
+   
+   {cardItem.map((item) => {
+             console.log(item);
+             return (
+               <div className="item brand manipul design print">
+                 <Card carditems={item} />{" "}
+               </div>
+             );
+           })}
+</OwlCarousel>;
+<p>These Are some of Public Projects</p>
+           
           </div>
         </div>
       </section>

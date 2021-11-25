@@ -9,9 +9,13 @@ export default function Card(props){
                       </div>
                       <div className="content" style={props.carditems.cardStyle}>
                       <h5>
+                        {props.carditems.prod?
                         <a href={props.carditems.url}>
                                   {props.carditems.head}
                             </a>
+                          :
+                          <h5>  {props.carditems.head} <br/>
+                          <span className='text-info'>This Website is Under Construction</span></h5>}
                       </h5>
                       <div className='text-left'>
 
