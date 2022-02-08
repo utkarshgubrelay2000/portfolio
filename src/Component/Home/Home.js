@@ -152,10 +152,11 @@ let options={
             <div className="banner_content">
               <div className="media row ">
                 <div className="d-flex col-md-6 col-12">
-                  <img
-                    className="homePageImage"
-                    src="https://res.cloudinary.com/dvu7miswu/image/upload/v1616061752/a2z5guhisnfrxvydcca3.jpg"
-                    alt=""
+                
+                   <img
+                    className="homePageImage" 
+                     src="https://i.ibb.co/wQLv6V3/IMG-20211231-151134.jpg" alt="IMG-20211231-151134" border="0"
+                
                   />
                 </div>
                 <div className="media-body col-md-6 col-12">
